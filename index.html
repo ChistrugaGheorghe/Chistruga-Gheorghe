@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Gheorghe Chistruga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <a class="nav-link" href="">DESPRE</a>
+            <a class="nav-link" href="#experienta">EXPERIENȚĂ</a>
+            <a class="nav-link" href="#educatie">EDUCAȚIE</a>
+            <a class="nav-link" href="pages/contacte.html">CONTACTE</a>
+        </nav>
+    </div>
+
+    <div class="main">
+
+        <div class="info">
+
+            <div class="centered">
+                <img class="poza-eu" src="images/eu.jpg">
+                <h2 class="verde">Gheorghe Chistruga</h2>
+            </div>
+
+            <table>
+                <tr>
+                    <td class="celula-abilitati">
+                        <i class="fas verde fa-asterisk"></i>
+                        <span>Programator</span>
+                        <br /> <br />
+
+                        <i class="fas verde fa-language"></i>
+                        <span>Româna, Engleza, Rusa</span>
+                        <br /> <br />
+
+                        <i class="fas verde fa-envelope"></i>
+                        <a href="mailto:gchistruga@gmail.com"> gchistruga@gmail.com </a>
+                        <br /> <br />
+
+                        <i class="fas verde fa-phone"></i>
+                        <a href="tel:+373000111">+373 000 111</a>
+                        <br /> <br />
+                    </td>
+
+                    <td class="celula-text">
+                        <p class="text-despre">
+                            Sunt un tânăr profesionist IT din Republica Moldova pasionat de dezvoltarea de software și
+                            mai ales de dezvoltarea de aplicații web. Am cunoștințe în alte domenii precum dezvoltarea
+                            de aplicații mobile, baze de date, algoritmi, șabloane de proiectare. Lucram cu aceste
+                            tehnologii: .NET Core (MVC, API), SQL, SSRS, Entity Framework, NHibernate, SignalR, Xamarin,
+                            Arduino, JQuery, JQGrid, Bootstrap. Limbajele mele de programare preferate sunt: C#, C,
+                            JavaScript, SQL. Pe lângă limbaje de programare, am și experiență în scrierea unui „cod
+                            curat” cu aplicarea SOLID, Design Patterns, Clean Architecture.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tabel-gal">
+                <tr>
+                    <td class="celula-img">
+                        <a target="_blank" href="images/f1.jpg">
+                            <img class="img-gal" src="images/f1.jpg">
+                        </a>
+                    </td>
+
+                    <td class="celula-img">
+                        <a target="_blank" href="images/f2.jpg">
+                            <img class="img-gal" src="images/f2.jpg">
+                        </a>
+                    </td>
+
+                    <td class="celula-img">
+                        <a target="_blank" href="images/f3.jpg">
+                            <img class="img-gal" src="images/f3.jpg">
+                        </a>
+                    </td>
+
+                    <td class="celula-img">
+                        <a target="_blank" href="images/f4.jpg">
+                            <img class="img-gal" src="images/f4.jpg">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="info" id="experienta">
+
+            <h2 class="centered verde">Experiența de lucru</h2>
+            <div class="item">
+                <h3 class="item-h3 verde">
+                    <i class="fas fa-suitcase"></i>
+                    Profesor de matematica si fizica
+                </h3>
+                <span>August 1982 - pina in prezent</span>
+                <p>
+                    profesor scolar
+                </p>
+
+            </div>
+            <div class="item">
+                <h3 class="item-h3 verde">
+                    <i class="fas fa-suitcase"></i>
+                    Specialist principal la DE Drochia
+                </h3>
+                <span>August 2003 - pina in prezent</span>
+                <p>
+                    Manager de proiect Tekvill in fiecare scoala
+                </p>
+
+            </div>
+            <div class="item">
+                <h3 class="item-h3 verde">
+                    <i class="fas fa-suitcase"></i>
+                    Informatica
+                </h3>
+                <span>septembrie 1985 </span>
+                <p>
+                    Profesor de informatica scoala
+                </p>
+
+            </div>
+            
+            
+        </div>
+        <div class="info" id="educatie">
+            <h2 class="centered verde">Educatie</h2>
+            <div class="item">
+                <h3 class="item-h3 verde">
+                    <i class="fas fa-graduation-cap"></i>
+                    Studii de masterat
+                </h3>
+                <span>septembrie 2021 </span>
+                <p>
+                    Masterat in domeniul stiintelor reale
+                </p>
+
+            </div>
+            <div class="item">
+                <h3 class="item-h3 verde">
+                    <i class="fas fa-graduation-cap"></i>
+                    Studii de licenta
+                </h3>
+                <span>iulie 1982 </span>
+                <p>
+                    Fizica si matematica
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        Gheorghe Chistruga 2023
+
+    </footer>
+
+    <script>
+        var form = document.getElementById('formular');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("formular")),
+            }).then(() =>{
+                alert("Multumesc !");
+                form.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>
